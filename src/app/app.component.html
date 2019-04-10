@@ -1,0 +1,7 @@
+<p>Checkbox</p>
+
+<div *ngFor="let fruit of fruits; index as i">
+  <label for="fruit{{i}}">
+    <input id="fruit{{i}}" [checked]="selection.indexOf(fruit) > -1" type="checkbox"> {{fruit}}
+ </label>
+</div>
